@@ -1,9 +1,8 @@
 from diagrams import Diagram, Edge
-from diagrams.aws.network import Route53
+from diagrams.aws.general import User
+from diagrams.aws.network import CloudFront, Route53
 from diagrams.aws.security import CertificateManager
 from diagrams.aws.storage import S3
-from diagrams.aws.network import CloudFront
-from diagrams.aws.general import User
 
 with Diagram("Static Website Hosting on AWS", show=False, filename="static-website-aws"):
     user = User("Website Visitor")
